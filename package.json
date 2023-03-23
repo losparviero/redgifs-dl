@@ -1,0 +1,30 @@
+{
+  "name": "redgifs-dl",
+  "version": "1.0.0",
+  "description": "Download gifs from Redgifs in the CLI.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "bin": {
+    "redgifs-dl": "./redgifs-dl.js"
+  },
+  "scripts": {
+    "start": "node redgifs-dl.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/losparviero/xmega.git"
+  },
+  "author": {
+    "name": "Zubin",
+    "email": "me@zubin.org.in",
+    "url": "https://zubin.org.in"
+  },
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "input": "^1.0.1",
+    "puppeteer": "^19.7.5"
+  },
+  "devDependencies": {}
+}
