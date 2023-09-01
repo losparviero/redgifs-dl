@@ -1,0 +1,33 @@
+{
+  "name": "redgifs-dl",
+  "version": "0.1.1",
+  "description": "Download gifs from Redgifs in the CLI.",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "redgifs-dl": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/losparviero/redgifs-dl.git"
+  },
+  "keywords": [
+    "redgifs",
+    "redgifs-dl",
+    "redgifs-downloader"
+  ],
+  "author": {
+    "name": "Zubin",
+    "email": "me@zubin.org.in",
+    "url": "https://zubin.org.in"
+  },
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "input": "^1.0.1",
+    "redgif": "^0.1.2"
+  }
+}
