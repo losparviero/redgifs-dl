@@ -14,16 +14,23 @@ import fs from "fs";
 import { getGif } from "redgif";
 const regex = /https:\/\/www\.redgifs\.com\/watch\/(\w+)/;
 
-async function main() {
+let continueChoice = true;
+while (continueChoice) {
   const userInput = await input.text("Enter Redgifs link to download:");
   const match = userInput.match(regex);
 
   if (match) {
     const gifId = match[1];
-    fs.writeFileSync("redgif.mp4", await getGif(gifId));
+    console.log("Downloading");
+    fs.writeFileSync(`${gifId}.mp4`, await getGif(gifId));
+    console.log(`${gifId}.mp4 saved to ${process.cwd()}`);
   } else {
     console.log("Not a valid RedGifs link.");
   }
-}
 
-main();
+  continueChoice = await input.confirm("Do you want to download another?");
+  if (!continueChoice) {
+    break;
+  }
+}
+process.exit();

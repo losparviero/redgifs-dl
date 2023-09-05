@@ -1,6 +1,6 @@
 {
   "name": "redgifs-dl",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Download gifs from Redgifs in the CLI.",
   "main": "src/index.js",
   "type": "module",

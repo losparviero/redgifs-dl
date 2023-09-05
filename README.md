@@ -2,9 +2,9 @@
 
 Download gifs from Redgifs in the CLI.
 
-### Usage
-
 For programmatic usage, see [redgif](https://npmjs.com/redgif).
+
+### Usage
 
 #### Without installing
 
@@ -12,12 +12,15 @@ For programmatic usage, see [redgif](https://npmjs.com/redgif).
 npx redgifs-dl
 ```
 
+Follow the prompts.
+
 #### With install
 
 
 ```shell
 npm i -g redgifs-dl
 ```
+
 Then
 
 ```shell
